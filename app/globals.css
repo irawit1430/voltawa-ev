@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-voltava-primary: #1F3D2B;
+  --color-voltava-accent: #6B8F71;
+  --color-voltava-bg: #F8F7F4;
+  --color-voltava-card: #FFFFFF;
+  --color-voltava-text: #1A1A1A;
+  
+  --font-sans: var(--font-sans);
+}
+
+@layer base {
+  :root {
+    --background: #F8F7F4;
+    --foreground: #1A1A1A;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+  }
+}
